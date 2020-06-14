@@ -58,6 +58,7 @@ public class LoginApi {
         Assert.notNull(stuNumber, "请填写学号");
         Assert.notNull(phone, "请填写手机号码");
         Assert.notNull(password, "请填写密码");
+        service.add(phone, stuNumber, password);
         return ResultUtils.returnSuccess("注册成功");
     }
 

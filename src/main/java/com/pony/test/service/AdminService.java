@@ -13,4 +13,6 @@ public interface AdminService {
     Admin get(String openId, String unionId);
 
     void bind(Admin admin, WxUser wxUser);
+
+    void add(String phone, String stuNumber, String password);
 }

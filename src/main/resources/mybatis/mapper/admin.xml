@@ -7,6 +7,7 @@
         select * from admin where name=#{name}
     </select>
 
+
     <select id="query" resultType="com.pony.test.pojo.Admin">
         select * from admin
     </select>
@@ -15,6 +16,9 @@
         select * from admin where account=#{account}
     </select>
 
+    <select id="getByStudent" resultType="admin" parameterType="Long">
+        select id from admin where student_id = #{studentId} and is_del = 0
+    </select>
     <select id="getByOpenId" resultType="com.pony.test.pojo.Admin">
         select * from admin where open_id=#{openId}
     </select>

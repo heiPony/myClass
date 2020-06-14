@@ -1,7 +1,9 @@
 package com.pony.test.service;
 
+import com.pony.test.pojo.Student;
+
 public interface StudentService {
 
 
-    int count(String stuNumber);
+    Student get(String stuNumber);
 }

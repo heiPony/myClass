@@ -1,8 +1,10 @@
 package com.pony.test.mapper;
 
+import com.pony.test.pojo.Student;
+
 public interface StudentMapper {
 
-    int count(String stuNumber);
+    Student get(String stuNumber);
 
 
 }

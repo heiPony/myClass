@@ -17,6 +17,7 @@ public class Admin {
     private String unionId;         //unionId
     private Date authTime;          //授权时间
     private Date createTime;        //创建时间
+    private Long studentId;         //学生id
 
 
     public Long getId() {
@@ -121,5 +122,13 @@ public class Admin {
 
     public void setSex(Byte sex) {
         this.sex = sex;
+    }
+
+    public Long getStudentId() {
+        return studentId;
+    }
+
+    public void setStudentId(Long studentId) {
+        this.studentId = studentId;
     }
 }

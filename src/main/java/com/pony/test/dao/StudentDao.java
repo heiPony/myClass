@@ -1,8 +1,9 @@
 package com.pony.test.dao;
 
 
+import com.pony.test.pojo.Student;
 
 public interface StudentDao {
 
-    int count(String stuNumber);
+    Student get(String stuNumber);
 }

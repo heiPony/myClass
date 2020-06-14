@@ -17,4 +17,6 @@ public interface AdminMapper {
     void update(Long id, String openId);
 
     void bind(Admin admin);
+
+    Admin getByStudent(Long id);
 }

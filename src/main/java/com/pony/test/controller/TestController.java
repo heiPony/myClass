@@ -1,6 +1,7 @@
 package com.pony.test.controller;
 
 import com.pony.test.service.AdminService;
+import com.pony.test.service.impl.AdminServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -16,7 +17,8 @@ public class TestController {
     JdbcTemplate jdbcTemplate;
 
     @Autowired
-    AdminService service;
+    AdminServiceImpl service;
+
 
     @RequestMapping("/admin")
     public Map list(){
@@ -25,7 +27,10 @@ public class TestController {
         return map;
     }
 
-
+    @RequestMapping("/count")
+    public String test(){
+        return service.count("1206012116");
+    }
 
 
 }

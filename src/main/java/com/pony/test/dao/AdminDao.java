@@ -9,4 +9,6 @@ public interface AdminDao {
     Admin getByOpenId(String openId);
 
     void bind(Admin admin);
+
+    Admin getByStudent(Long id);
 }
