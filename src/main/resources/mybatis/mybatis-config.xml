@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+        <!DOCTYPE configuration
+                PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+                "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <settings>
+        <!-- 具体的参数名和参数值 -->
+        <setting name="mapUnderscoreToCamelCase" value="true"/>
+    </settings>
+    <!-- 类型名称：为一些类定义别名 -->
+    <typeAliases>
+        <typeAlias  alias="Admin" type="com.pony.test.pojo.Admin"/>
+
+    </typeAliases>
+</configuration>

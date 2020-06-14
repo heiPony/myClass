@@ -1,0 +1,17 @@
+
+spring:
+  thymeleaf:
+    cache: false
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://49.233.90.229:3306/myTest?serverTimezone=GMT%2B8&characterEncoding=utf8
+    username: root
+    password: 926--Hzp
+
+
+server:
+  port: 8082
+
+mybatis:
+  mapper-locations: classpath:mybatis/mapper/*.xml
+  config-location: classpath:mybatis/mybatis-config.xml
