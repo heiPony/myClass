@@ -52,6 +52,24 @@ public class LoginApi {
         return ResultUtils.returnSuccess(loginService.login(account, password, openId, iv, encryptedData));
     }
 
+    @RequestMapping("/add")
+    public Result add(String phone, String stuNumber, String password){
+        logger.info("注册学生账号");
+        Assert.notNull(stuNumber, "请填写学号");
+        Assert.notNull(phone, "请填写手机号码");
+        Assert.notNull(password, "请填写密码");
+        return ResultUtils.returnSuccess("注册成功");
+    }
+
+
+    @RequestMapping("/get-code")
+    public Result getCode(String phone){
+        logger.info("注册--获取验证");
+        Assert.notNull(phone, "请填写手机号码");
+
+        return ResultUtils.returnSuccess("注册成功");
+    }
+
 
 
 }

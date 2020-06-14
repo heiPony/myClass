@@ -33,4 +33,12 @@
         </trim>
         where id = #{id}
     </update>
+
+    <insert id="add" parameterType="admin">
+        insert into admin()
+
+    </insert>
+
+
+
 </mapper>

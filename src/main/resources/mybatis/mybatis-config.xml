@@ -10,6 +10,6 @@
     <!-- 类型名称：为一些类定义别名 -->
     <typeAliases>
         <typeAlias  alias="Admin" type="com.pony.test.pojo.Admin"/>
-
+        <typeAlias  alias="Student" type="com.pony.test.pojo.Student"/>
     </typeAliases>
 </configuration>

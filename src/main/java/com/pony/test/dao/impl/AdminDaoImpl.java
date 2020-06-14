@@ -1,5 +1,6 @@
-package com.pony.test.dao;
+package com.pony.test.dao.impl;
 
+import com.pony.test.dao.AdminDao;
 import com.pony.test.mapper.AdminMapper;
 import com.pony.test.pojo.Admin;
 import org.springframework.beans.factory.annotation.Autowired;
