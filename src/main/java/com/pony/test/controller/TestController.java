@@ -39,6 +39,10 @@ public class TestController {
 
     @RequestMapping("/test")
     public String jenkins(){
-        return service.count("jenkins");
+        return "jenkins test";
+    }
+    @RequestMapping("/perfect")
+    public String perfect(){
+        return "jenkins perfect";
     }
 }
