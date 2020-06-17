@@ -47,4 +47,9 @@ public class TestController {
         logger.info("======jenkins perfect========");
         return "jenkins perfect";
     }
+    @RequestMapping("/test1")
+    public String test_1(String name){
+        logger.info("======{} perfect========",name);
+        return name+" perfect";
+    }
 }
