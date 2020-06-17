@@ -32,5 +32,8 @@ public class TestController {
         return service.count("1206012116");
     }
 
-
+    @RequestMapping("/test")
+    public String jenkins(){
+        return service.count("jenkins");
+    }
 }
