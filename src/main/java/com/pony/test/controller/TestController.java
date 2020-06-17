@@ -39,6 +39,7 @@ public class TestController {
 
     @RequestMapping("/test")
     public String jenkins(){
+        logger.info("======jenkins test========");
         return "jenkins test";
     }
     @RequestMapping("/perfect")
