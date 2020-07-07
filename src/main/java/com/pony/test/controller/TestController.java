@@ -9,6 +9,7 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -52,4 +53,30 @@ public class TestController {
         logger.info("======{} perfect========",name);
         return name+" perfect";
     }
+
+
+    public static void main(String[] args) {
+        HashMap<Object, Object> map = new HashMap<>();
+
+        map.put("Aa","Aa");
+        map.put("BB","BB");
+        map.put("CC","CC");
+        map.put("Bb","Bb");
+        map.get("BB");
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
 }

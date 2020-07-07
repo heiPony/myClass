@@ -71,6 +71,10 @@ public class LoginApi {
         return ResultUtils.returnSuccess("注册成功");
     }
 
+    public static void main(String[] args) {
+        System.out.println("012".hashCode());
+        System.out.println("Aa".hashCode());
+    }
 
 
 }

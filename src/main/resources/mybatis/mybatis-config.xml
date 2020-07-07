@@ -11,5 +11,8 @@
     <typeAliases>
         <typeAlias  alias="Admin" type="com.pony.test.pojo.Admin"/>
         <typeAlias  alias="Student" type="com.pony.test.pojo.Student"/>
+        <typeAlias  alias="Fund" type="com.pony.test.pojo.Fund"/>
+
+
     </typeAliases>
 </configuration>
