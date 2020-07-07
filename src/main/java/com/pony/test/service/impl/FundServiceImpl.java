@@ -40,16 +40,12 @@ public class FundServiceImpl implements FundService {
 
         return new BigDecimal("0.01").multiply(sum).setScale(2,BigDecimal.ROUND_HALF_UP).toString();
     }
-
-
-
-    public static void main(String[] args) {
-        String url = "http://fund.eastmoney.com/008887.html?spm=aladin";
-        String eId = "gz_gszzl";
-
-    }
-
-
+    /**
+     * 获取净值估算率
+     * @Author huangzhanping
+     * @param [dataUrl, eId]
+     * @return 2020/7/7 17:35
+     */
     public  BigDecimal geRate(String dataUrl, String eId) {
         Document doc = null;
         try {
