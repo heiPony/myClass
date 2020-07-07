@@ -15,4 +15,6 @@ public interface AdminService {
     void bind(Admin admin, WxUser wxUser);
 
     void add(String phone, String stuNumber, String password);
+
+    Admin getById(Long adminId);
 }

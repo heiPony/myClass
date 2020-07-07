@@ -1,5 +1,7 @@
 package com.pony.test.api;
 
+import com.pony.test.pojo.Admin;
+import com.pony.test.service.impl.AdminServiceImpl;
 import com.pony.test.service.impl.FundServiceImpl;
 import com.pony.test.utils.Assert;
 import com.pony.test.utils.Result;
@@ -10,6 +12,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+
 @RestController
 @RequestMapping("/sp/fund")
 public class FundApi {
@@ -18,10 +21,14 @@ public class FundApi {
 
     @Autowired
     FundServiceImpl service;
+    @Autowired
+    AdminServiceImpl adminService;
     @RequestMapping("/get-profit")
     public Result getCode(Long adminId){
         Assert.notNull(adminId, "请登录");
-        return ResultUtils.returnSuccess( service.getProfit(adminId));
+        Admin admin = new Admin();
+        admin.setProfit(service.getProfit(adminId));
+        return ResultUtils.returnSuccess(admin);
     }
 
 }

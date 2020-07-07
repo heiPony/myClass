@@ -62,6 +62,11 @@ public class AdminServiceImpl implements AdminService {
         Assert.state(admin != null, "该学号已被注册");
     }
 
+    @Override
+    public Admin getById(Long id) {
+        return dao.get(id);
+    }
+
     public String count(String stuNumber) {
         Student student = studentService.get(stuNumber);
         Admin admin = dao.getByStudent(student.getId());

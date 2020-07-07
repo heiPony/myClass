@@ -19,4 +19,6 @@ public interface AdminMapper {
     void bind(Admin admin);
 
     Admin getByStudent(Long id);
+
+    Admin get(Long id);
 }

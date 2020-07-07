@@ -19,6 +19,8 @@ public class Admin {
     private Date createTime;        //创建时间
     private Long studentId;         //学生id
 
+    private String profit;
+
 
     public Long getId() {
         return id;
@@ -130,5 +132,13 @@ public class Admin {
 
     public void setStudentId(Long studentId) {
         this.studentId = studentId;
+    }
+
+    public String getProfit() {
+        return profit;
+    }
+
+    public void setProfit(String profit) {
+        this.profit = profit;
     }
 }
