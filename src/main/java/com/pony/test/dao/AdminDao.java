@@ -12,5 +12,4 @@ public interface AdminDao {
 
     Admin getByStudent(Long id);
 
-    Admin get(Long id);
 }

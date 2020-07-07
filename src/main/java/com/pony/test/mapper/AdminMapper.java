@@ -20,5 +20,4 @@ public interface AdminMapper {
 
     Admin getByStudent(Long id);
 
-    Admin get(Long id);
 }

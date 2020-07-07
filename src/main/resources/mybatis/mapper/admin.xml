@@ -6,9 +6,6 @@
     <select id="get" resultType="com.pony.test.pojo.Admin" parameterType="String">
         select * from admin where name=#{name}
     </select>
-    <select id="get" resultType="com.pony.test.pojo.Admin" parameterType="long">
-        select * from admin where id=#{id}
-    </select>
 
     <select id="query" resultType="com.pony.test.pojo.Admin">
         select * from admin

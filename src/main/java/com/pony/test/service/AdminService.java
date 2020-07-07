@@ -16,5 +16,4 @@ public interface AdminService {
 
     void add(String phone, String stuNumber, String password);
 
-    Admin getById(Long adminId);
 }

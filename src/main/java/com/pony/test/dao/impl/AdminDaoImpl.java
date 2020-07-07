@@ -37,10 +37,5 @@ public class AdminDaoImpl implements AdminDao {
         return mapper.getByStudent(id);
     }
 
-    @Override
-    public Admin get(Long id) {
-        return mapper.get(id);
-    }
-
 
 }
