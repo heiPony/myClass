@@ -4,12 +4,8 @@ import com.pony.test.dao.impl.FundDaoImpl;
 import com.pony.test.pojo.Fund;
 import com.pony.test.service.FundService;
 import org.apache.commons.lang.StringUtils;
-import org.apache.commons.codec.binary.Base64;
-import org.jsoup.Connection;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
-import org.jsoup.nodes.Element;
-import org.jsoup.select.Elements;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -42,7 +38,7 @@ public class FundServiceImpl implements FundService {
             sum = sum.add(item.getMoney().multiply(rate)).setScale(2,BigDecimal.ROUND_HALF_UP);
         }
 
-        return new BigDecimal("0.01").multiply(sum).toString();
+        return new BigDecimal("0.01").multiply(sum).setScale(2,BigDecimal.ROUND_HALF_UP).toString();
     }
 
 

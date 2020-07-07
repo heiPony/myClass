@@ -1,6 +1,5 @@
 package com.pony.test.controller;
 
-import com.pony.test.service.AdminService;
 import com.pony.test.service.impl.AdminServiceImpl;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
